@@ -16,39 +16,28 @@
     <title>CV Aaron Abele</title>
   </head>
   <body>
-    <header>
-      <h1 id="overall">Aaron Abele</h1>
-      <i>
-        Profession: Purchase Order Processing, Future Profession: Frontend
-        Developer
-      </i>
+    <header class="simple-header--centered">
       <nav>
-        <a
-          style="text-decoration: underline lightgray; color: black"
-          href="#profile"
-          >Profile</a
-        >
-        <a
-          style="text-decoration: underline lightgray; color: black"
-          href="#experiences"
-          >Experiences</a
-        >
-        <a
-          style="text-decoration: underline lightgray; color: black"
-          href="#skills"
-          >Skills</a
-        >
-        <a
-          style="text-decoration: underline lightgray; color: black"
-          href="#contact"
-          >Contact</a
-        >
+        <ul class="main-navigation__items">
+          <li class="nav-links">
+            <a class="nav-item" href="#profile">Profile</a>
+          </li>
+          <li class="nav-links">
+            <a class="nav-item" href="#experiences">Experiences</a>
+          </li>
+          <li class="nav-links">
+            <a class="nav-item" href="#skills">Skills</a>
+          </li>
+          <li class="nav-links">
+            <a class="nav-item" href="#contact">Contact</a>
+          </li>
+        </ul>
+        <img class="logo" src="./logl.jpg" alt="Logo Aaron Abele" />
       </nav>
     </header>
-
     <main>
       <article>
-        <h2 id="" profile>Profile</h2>
+        <h2 id="#profile">Profile</h2>
         <p>
           Hi I'm <strong>Aaron</strong>.<br />
           I've been taking part in the coding bootcamp since October 2022 to
@@ -61,7 +50,7 @@
         <section>
           <header>
             <h3>Inside Sales</h3>
-            <p>2014 - 2021</p>
+            <p class="years">2014 - 2021</p>
           </header>
           <p>
             I'm baby <i>taxidermy</i> 8-bit unicorn beard tacos humblebrag
@@ -79,7 +68,7 @@
         <section>
           <header>
             <h3>Purchase Order Processing incl. Controlling</h3>
-            <p>2021 - now</p>
+            <p class="years">2021 - now</p>
             <p></p>
           </header>
 
@@ -112,13 +101,53 @@
           <header>
             <h3>Technichal Skills</h3>
           </header>
-          <ul>
-            <li>T-SQL</li>
-            <li>VBA</li>
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>JavaScript</li>
-            <li>VueJS</li>
+          <ul class="techskillslist">
+            <div class="unitechskill">
+              <li>
+                <img
+                  class="tsql zoomeffekt-tsql-vba"
+                  src="./t-sql.jpeg"
+                  alt="Logo Transact SQL bunt"
+                />
+              </li>
+              <li>
+                <img
+                  class="vba zoomeffekt-tsql-vba"
+                  src="./image-vba.png"
+                  alt="Logo Visual Basic for Applications bunt"
+                />
+              </li>
+            </div>
+            <div class="frontend-skills">
+              <li>
+                <img
+                  class="html5 zoomeffekt-rest"
+                  src="./image-html.png"
+                  alt="Logo HTML5 bunt"
+                />
+              </li>
+              <li>
+                <img
+                  class="css3 zoomeffekt-rest"
+                  src="./image-css.png"
+                  alt="Logo CSS3 bunt"
+                />
+              </li>
+              <li>
+                <img
+                  class="javascript zoomeffekt-rest"
+                  src="./image-javascript.jpeg"
+                  alt="Logo JavaScript bunt"
+                />
+              </li>
+              <li>
+                <img
+                  class="vue zoomeffekt-rest"
+                  src="./image-vue.png"
+                  alt="Logo Vue.js bunt"
+                />
+              </li>
+            </div>
           </ul>
         </section>
       </article>
@@ -126,31 +155,36 @@
 
     <footer>
       <header>
-        <h3 id="contact">Contact</h3>
+        <h2 id="contact">Contact</h2>
       </header>
-      <ol>
-        <li>
-          <a
-            style="text-decoration: underline lightgray; color: black"
-            href="mailto:aaronabele.coding@gmail.com"
-            >E-Mail</a
-          >
-        </li>
-        <li>
-          <a
-            style="text-decoration: underline lightgray; color: black"
-            href="tel:+491234565"
-            >Phone</a
-          >
-        </li>
-        <li>
-          <a
-            style="text-decoration: underline lightgray; color: black"
-            href="carrier pigeon"
-            >Can telephone</a
-          >
-        </li>
-      </ol>
+      <ul class="contactlist">
+        <div class="symbols-centered">
+          <li class="contact-item">
+            <a href="mailto:aaronabele.coding@gmail.com">
+              <img
+                class="logo-email"
+                src="./image-email-blue.png"
+                alt="Logo Email blau weiss"
+            /></a>
+          </li>
+          <li class="contact-item">
+            <a href="tel:+49123456789">
+              <img
+                class="logo-phone"
+                src="./image-phone-purple.png"
+                alt="Logo Telefon blau weiß"
+            /></a>
+          </li>
+          <li class="contact-item">
+            <a href="https//www.xing.de">
+              <img
+                class="logo-xing"
+                src="./image-xing.png"
+                alt="Logo Xing grün weiß hellgrün"
+            /></a>
+          </li>
+        </div>
+      </ul>
     </footer>
   </body>
 </html>
