@@ -3,12 +3,18 @@ html {
   box-sizing: border-box;
   max-width: 800px;
   margin: 0 auto;
+  background-color: lightgray;
 }
 
-.main-navigation__items {
-  display: flex;
-  gap: 1em;
-  list-style-type: none;
+main {
+  background-color: white;
+  padding-top: 1px;
+  padding-bottom: 10px;
+}
+
+footer {
+  background-color: #216477;
+  padding-top: 1px;
 }
 
 .simple-header--centered {
@@ -16,64 +22,79 @@ html {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-color: #216477;
+}
+
+.main-navigation__items {
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
+  list-style-type: none;
+  width: 762px;
+  padding-right: 40px;
+  padding: 10px;
+  margin: 0px;
+  border-bottom: 1px solid white;
 }
 
 .nav-item {
-  color: #464646;
+  color: white;
   font-style: bold;
-  font-size: 19px;
+  font-size: 14px;
+  text-decoration: none;
+  padding: 10px 5px;
 }
 
-.logo {
-  margin-top: 10px;
-  margin-bottom: 48px;
-  /*border-bottom: 1px dotted #464646;*/
-  border: 10px solid darkblue;
-}
-
-a:link {
-  background-color: white;
-}
-
-a:visited {
-  background-color: white;
-}
-
-a:hover {
-  font-weight: 600;
-}
-
-a:active {
-  font-size: 20px;
+.name {
+  display: flex;
+  justify-content: center;
+  font-size: 36px;
+  font-weight: 400;
+  padding: 16px 16px;
+  color: #ff8800;
 }
 
 h2 {
-  border-bottom: 1px dotted #464646;
-  width: 30%;
-  padding: 2px 0px;
-  color: #464646;
+  padding: 0px 10px;
+  padding-top: 10px;
+  color: #ff8800;
 }
 
 h3 {
   font-style: italic;
+  color: #ff8800;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+p {
+  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
   color: #464646;
 }
 
 .years {
-  border-bottom: 1px dotted #464646;
-  width: 14%;
   color: #464646;
+  padding-left: 10px;
 }
 
-p {
-  border-bottom: 1px solid #464646;
-  padding-bottom: 20px;
-  padding-top: 10px;
-  color: #464646;
+a:link {
+  background-color: #216477;
 }
 
-article + article {
-  margin: 48px 0px;
+a:visited {
+  background-color: #216477;
+}
+
+a:hover {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+a:active {
+  font-size: 16px;
 }
 
 .techskillslist {
@@ -81,27 +102,31 @@ article + article {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding-bottom: 20px;
+}
+
+.unitechskill {
+  display: flex;
+  gap: 2em;
+  justify-content: center;
 }
 
 .tsql {
   width: 200px;
   height: auto;
-  padding-left: 25px;
+  margin-top: 10px;
+  margin-left: 10px;
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
 }
 
 .vba {
   width: 200px;
   height: auto;
   padding-top: 20px;
-}
-
-.html5,
-.css3,
-.javascript,
-.vue {
-  height: 100px;
-  width: auto;
-  padding-top: 10px;
+  margin-top: 10px;
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
 }
 
 .frontend-skills {
@@ -111,11 +136,16 @@ article + article {
   justify-content: center;
 }
 
-.unitechskill {
-  display: flex;
-  padding-left: 0px;
-  gap: 2em;
-  justify-content: center;
+.html5,
+.css3,
+.javascript,
+.vue {
+  height: 100px;
+  width: auto;
+  padding-top: 10px;
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+  margin-top: 10px;
 }
 
 .zoomeffekt-tsql-vba {
@@ -140,34 +170,68 @@ article + article {
   transform: scale(1.2);
 }
 
-.contactlist {
-  list-style-type: none;
+.profile-article,
+.experiences-articles,
+.article-skills {
+  box-shadow: inset 2em -2em 2em rgba(0, 0, 0, 0), 0 0 0 1px rgb(255, 255, 255),
+    0.2em 0.2em 1em rgba(0, 0, 0, 0.2);
+  background-color: white;
+  border-radius: 0%;
+  width: 98%;
+  margin-left: 7px;
 }
 
-.logo-email {
-  width: auto;
-  height: 60px;
+#contact {
+  color: #ff8800;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  text-align: center;
 }
 
-.logo-phone {
-  width: auto;
-  height: 45px;
-}
-
-.logo-xing {
-  width: auto;
-  height: 45px;
-}
-
-.contactlist {
+.contact-list {
   display: flex;
   justify-content: center;
-  align-content: center;
+  align-items: center;
   flex-direction: column;
 }
 
-.symbols-centered {
+.clist {
   display: flex;
-  justify-content: center;
-  gap: 5em;
+  gap: 2em;
+  padding: 10px 0px;
+}
+
+.contact-item {
+  list-style-type: none;
+}
+
+#fb-logo {
+  width: 40px;
+  height: auto;
+}
+
+#xing-logo {
+  width: 40px;
+  height: auto;
+}
+
+#linkedin-logo {
+  width: 50px;
+  height: auto;
+}
+
+#github-logo {
+  width: 45px;
+  height: auto;
+}
+
+#email-logo {
+  width: 50px;
+  height: auto;
+}
+
+#phone-logo {
+  padding-top: 2px;
+  width: auto;
+  height: 40px;
 }
