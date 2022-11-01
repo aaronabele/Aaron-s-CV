@@ -268,3 +268,8 @@ a:active {
 .soft-ul {
   list-style-type: circle;
 }
+
+::selection {
+  background-color: #216477;
+  color: white;
+}
