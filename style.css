@@ -1,9 +1,9 @@
 html {
-  font-family: monospace;
+  font-family: "Quicksand", sans-serif;
   box-sizing: border-box;
   max-width: 800px;
   margin: 0 auto;
-  background-color: lightgray;
+  background-color: darkgray;
 }
 
 main {
@@ -34,7 +34,8 @@ footer {
   padding-right: 40px;
   padding: 10px;
   margin: 0px;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid #ff8800;
+  max-width: 800px;
 }
 
 .nav-item {
@@ -45,26 +46,47 @@ footer {
   padding: 10px 5px;
 }
 
-.name {
+.above {
   display: flex;
   justify-content: center;
-  font-size: 36px;
-  font-weight: 400;
-  padding: 16px 16px;
-  color: #ff8800;
+  align-items: center;
+  flex-direction: column;
+}
+
+.name {
+  font-size: 48px;
+  font-weight: 800;
+  color: white;
+  text-shadow: -1px 0 #464646, 0 1px #464646, 1px 0 #464646, 0 -1px #464646;
+  margin-bottom: 0px;
+  margin-top: 10px;
+  padding: 10px 10px;
+}
+
+.profession {
+  display: flex;
+  justify-content: center;
+  color: lightgray;
+  margin: 0px 0px;
+  margin-bottom: 10px;
+  padding: 0px 0px;
+  padding-bottom: 20px;
+  font-size: 14px;
+  font-style: italic;
 }
 
 h2 {
-  padding: 0px 10px;
+  padding: 5px 10px;
   padding-top: 10px;
-  color: #ff8800;
+  color: #216477;
+  border-bottom: 1px solid #464646;
 }
 
 h3 {
   font-style: italic;
   color: #ff8800;
   padding-left: 10px;
-  padding-top: 10px;
+  padding-top: 5px;
 }
 
 p {
@@ -78,6 +100,7 @@ p {
 .years {
   color: #464646;
   padding-left: 10px;
+  font-style: bold;
 }
 
 a:link {
@@ -118,6 +141,7 @@ a:active {
   margin-left: 10px;
   box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
     0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
 }
 
 .vba {
@@ -127,6 +151,7 @@ a:active {
   margin-top: 10px;
   box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
     0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
 }
 
 .frontend-skills {
@@ -146,6 +171,7 @@ a:active {
   box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
     0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
   margin-top: 10px;
+  border-radius: 10px;
 }
 
 .zoomeffekt-tsql-vba {
@@ -177,15 +203,18 @@ a:active {
     0.2em 0.2em 1em rgba(0, 0, 0, 0.2);
   background-color: white;
   border-radius: 0%;
-  width: 98%;
-  margin-left: 7px;
+  width: 97%;
+  margin-left: 11px;
+  border-radius: 10px;
 }
 
 #contact {
-  color: #ff8800;
+  border-bottom: 1px solid #ff8800;
+  color: white;
   padding-top: 0px;
-  padding-bottom: 0px;
+  padding-bottom: 10px;
   text-align: center;
+  font-weight: 400;
 }
 
 .contact-list {
@@ -234,4 +263,8 @@ a:active {
   padding-top: 2px;
   width: auto;
   height: 40px;
+}
+
+.soft-ul {
+  list-style-type: circle;
 }
