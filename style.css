@@ -32,7 +32,7 @@ footer {
   list-style-type: none;
   width: 762px;
   padding-right: 40px;
-  padding: 10px;
+  padding: 15px;
   margin: 0px;
   border-bottom: 1px solid #ff8800;
   max-width: 800px;
@@ -272,4 +272,9 @@ a:active {
 ::selection {
   background-color: #216477;
   color: white;
+}
+
+.profession::after {
+  content: "👨‍💻";
+  font-style: normal;
 }
