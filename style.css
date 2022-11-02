@@ -1,4 +1,5 @@
 html {
+  font-size: 10px;
   font-family: "Quicksand", sans-serif;
   box-sizing: border-box;
   max-width: 800px;
@@ -6,11 +7,22 @@ html {
   background-color: darkgray;
 }
 
+header {
+  position: relative;
+}
+
+header .main-navigation__items {
+  position: sticky;
+  top: 0px;
+  background-color: #216477;
+}
+
 main {
   background-color: white;
   padding-top: 1px;
   padding-bottom: 10px;
   font-family: inherit;
+  font-size: 1.6rem;
 }
 
 footer {
@@ -29,22 +41,21 @@ footer {
 
 .main-navigation__items {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   gap: 1em;
   list-style-type: none;
-  width: 762px;
+  width: 770px;
   padding-right: 40px;
   padding: 15px;
   margin: 0px;
   border-bottom: 1px solid #ff8800;
-  max-width: 800px;
 }
 
 .nav-item {
   color: white;
   font-family: inherit;
   font-style: bold;
-  font-size: 14px;
+  font-size: 1.4rem;
   text-decoration: none;
   padding: 10px 5px;
 }
@@ -54,10 +65,10 @@ footer {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  font-size: 3rem;
 }
 
 .name {
-  font-size: 48px;
   font-weight: 800;
   color: white;
   text-shadow: -1px 0 #464646, 0 1px #464646, 1px 0 #464646, 0 -1px #464646;
@@ -74,8 +85,19 @@ footer {
   margin-bottom: 10px;
   padding: 0px 0px;
   padding-bottom: 20px;
-  font-size: 14px;
+  font-size: 0.45em;
   font-style: italic;
+}
+
+.hire-me {
+  border-radius: 5px;
+  padding: 5px 5px;
+  color: white;
+  background-color: #ff8800;
+  position: absolute;
+  top: 10px;
+  left: 710px;
+  font-size: 1.4rem;
 }
 
 h2 {
@@ -116,12 +138,12 @@ a:visited {
 }
 
 a:hover {
-  font-weight: 600;
-  font-size: 16px;
+  font-weight: 800;
+  font-size: 1.5rem;
 }
 
 a:active {
-  font-size: 16px;
+  font-size: 1.5rem;
 }
 
 .techskillslist {
@@ -139,19 +161,19 @@ a:active {
 }
 
 .tsql {
-  width: 200px;
+  width: 150px;
   height: auto;
   margin-top: 10px;
-  margin-left: 10px;
+  margin-left: 0px;
   box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
     0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
   border-radius: 10px;
 }
 
 .vba {
-  width: 200px;
+  width: 150px;
   height: auto;
-  padding-top: 20px;
+  padding-top: 10px;
   margin-top: 10px;
   box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
     0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
@@ -169,7 +191,7 @@ a:active {
 .css3,
 .javascript,
 .vue {
-  height: 100px;
+  height: 80px;
   width: auto;
   padding-top: 10px;
   box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
@@ -200,16 +222,23 @@ a:active {
   transform: scale(1.2);
 }
 
+.main-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .profile-article,
 .experiences-articles,
 .article-skills {
   box-shadow: inset 2em -2em 2em rgba(0, 0, 0, 0), 0 0 0 1px rgb(255, 255, 255),
     0.2em 0.2em 1em rgba(0, 0, 0, 0.2);
   background-color: white;
-  border-radius: 0%;
-  width: 97%;
-  margin-left: 11px;
+  min-width: 55ch;
+  max-width: 55ch;
   border-radius: 10px;
+  margin: 10px 0px;
 }
 
 #contact {
@@ -274,11 +303,98 @@ a:active {
 }
 
 ::selection {
-  background-color: #216477;
+  background-color: #ff8800;
   color: white;
 }
 
 .profession::after {
   content: "👨‍💻";
   font-style: normal;
+}
+
+@media print {
+  nav {
+    display: none;
+  }
+  .hire-me {
+    display: none;
+  }
+}
+
+@media print {
+  footer {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  html {
+    font-size: 10px;
+  }
+  .hire-me {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  html {
+    font-size: 10px;
+  }
+  .hire-me {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 11px;
+  }
+  .hire-me {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  html {
+    font-size: 12px;
+  }
+  .hire-me {
+    position: absolute;
+    top: 10px;
+    left: 710px;
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  html {
+    font-size: 13px;
+  }
+  .hire-me {
+    position: absolute;
+    top: 10px;
+    left: 710px;
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  html {
+    font-size: 14px;
+  }
+  .hire-me {
+    position: absolute;
+    top: 10px;
+    left: 710px;
+    font-size: 1.4rem;
+  }
 }
