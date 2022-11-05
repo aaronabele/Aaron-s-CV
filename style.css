@@ -19,7 +19,6 @@ header div {
 
 main {
   background-color: white;
-  padding-top: 1px;
   padding-bottom: 10px;
   font-family: inherit;
   font-size: 1.6rem;
@@ -29,6 +28,13 @@ footer {
   font-family: inherit;
   background-color: #216477;
   padding-top: 1px;
+  background-image: linear-gradient(360deg, #216477 50%, white 100%);
+}
+
+footer h2 {
+  text-shadow: -1px 0 #464646, 0 1px #464646, 1px 0 #464646, 0 -1px #464646;
+  color: white;
+  font-size: 1.6rem;
 }
 
 .simple-header--centered {
@@ -36,7 +42,7 @@ footer {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #216477;
+  background-image: linear-gradient(180deg, #216477 30%, white 100%);
 }
 
 .main-navigation__items {
@@ -48,7 +54,6 @@ footer {
   padding-right: 40px;
   padding: 15px;
   margin: 0px;
-  border-bottom: 1px solid #ff8800;
 }
 
 .nav-item {
@@ -89,7 +94,7 @@ footer {
 .profession {
   display: flex;
   justify-content: center;
-  color: lightgray;
+  color: #464646;
   margin: 0px 0px;
   margin-bottom: 10px;
   padding-bottom: 20px;
@@ -126,6 +131,7 @@ h3 {
   padding-left: 10px;
   padding-top: 5px;
   display: inline;
+  font-size: 1.4rem;
 }
 
 p {
@@ -134,6 +140,7 @@ p {
   padding-left: 10px;
   padding-right: 10px;
   color: #464646;
+  font-size: 1.4rem;
 }
 
 .years {
@@ -237,12 +244,12 @@ a:active {
 }
 
 #contact {
-  border-bottom: 1px solid #ff8800;
   color: white;
   padding-top: 0px;
   padding-bottom: 10px;
   text-align: center;
   font-weight: 400;
+  border-bottom: none;
 }
 
 .contact-list {
