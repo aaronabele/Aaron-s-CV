@@ -118,7 +118,8 @@ header div {
 }
 
 .zoomeffekt-item {
-  transition: transform 0.8s;
+  transition: transform 200ms;
+  transition-duration: 200ms;
 }
 
 .zoomeffekt-item:hover,
@@ -144,6 +145,10 @@ header div {
   top: 10px;
   left: 710px;
   font-size: var(--button-font-size);
+}
+
+.hire-me {
+  transition-property: opacity, transform;
 }
 
 .hire-me:hover {
@@ -266,7 +271,8 @@ main {
 
 .zoomeffekt-tsql-vba,
 .zoomeffekt-rest {
-  transition: transform 0.8s;
+  transition: transform 300ms;
+  transition-duration: 300ms;
 }
 
 .zoomeffekt-tsql-vba:hover,
