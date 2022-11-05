@@ -108,7 +108,7 @@ footer {
   font-size: 1.4rem;
 }
 
-.hire-me:hover:after {
+.hire-me:hover {
   content: url(./image-startwars.webp);
   display: inline-block;
 }
