@@ -1,9 +1,3 @@
-/*OUTLINE
-* {
-  outline: 1px solid red;
-}
-*/
-
 /*HTML*/
 html {
   font-size: 10px;
@@ -34,6 +28,8 @@ html {
   /*text-shadows*/
   --main-text-shadow: -1px 0 #464646, 0 1px #464646, 1px 0 #464646,
     0 -1px #464646;
+  --name-text-shadow: -1px 0 #ff8800, 0 1px #ff8800, 1px 0 #ff8800,
+    0 -1px #ff8800;
   /*background-colors*/
   --doc-background-color: darkgray;
   --main-background-color: white;
@@ -98,6 +94,7 @@ header div {
   background-color: var(--nav-background-color);
 }
 
+/*
 .simple-header--centered {
   display: flex;
   justify-content: center;
@@ -110,11 +107,27 @@ header div {
   display: flex;
   justify-content: center;
   gap: 1em;
-  list-style-type: none;
   width: 770px;
   padding-right: 40px;
   padding: 15px;
   margin: 0px;
+}
+*/
+
+.simple-header--centered {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  background-image: var(--t2b-background-image);
+}
+
+.main-navigation__items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
+  grid-column-gap: 2rem;
 }
 
 .zoomeffekt-item {
@@ -145,10 +158,6 @@ header div {
   top: 10px;
   left: 710px;
   font-size: var(--button-font-size);
-}
-
-.hire-me {
-  transition-property: opacity, transform;
 }
 
 .hire-me:hover {
@@ -187,6 +196,7 @@ header div {
 /*HEADER*/
 
 /*MAIN*/
+
 main {
   background-color: var(--main-background-color);
   padding-bottom: 10px;
@@ -226,10 +236,10 @@ main {
 
 .techskillslist {
   list-style-type: none;
+  padding-bottom: 20px;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding-bottom: 20px;
 }
 
 .unitechskill {
@@ -243,6 +253,24 @@ main {
   gap: 2em;
   justify-content: center;
 }
+
+/*
+.unitechskill {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.frontend-skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  justify-content: center;
+  align-items: center;
+}
+*/
 
 .vba {
   margin-top: 20px;
@@ -287,28 +315,17 @@ main {
 /*MAIN*/
 
 /*FOOTER*/
-footer {
-  font-family: inherit;
-  padding-top: 1px;
-  background-image: var(--b2t-background-image);
-}
-
-footer h2 {
-  text-shadow: --main-text-shadow;
-  color: var(--h2f-color);
-  font-size: 1.6rem;
-}
 
 .contact {
   color: var(--h2f-color);
   text-shadow: var(--main-text-shadow);
-  padding-top: 0px;
   padding-bottom: 10px;
+  font-size: 1.6rem;
   text-align: center;
-  font-weight: 400;
   border-bottom: none;
 }
 
+/*
 .contact-list {
   display: flex;
   justify-content: center;
@@ -320,6 +337,23 @@ footer h2 {
   display: flex;
   gap: 2em;
   padding: 10px 0px;
+}
+*/
+
+.fusszeile {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  background-image: var(--b2t-background-image);
+}
+
+.clist {
+  display: grid;
+  grid-template-columns: max-content max-content max-content max-content max-content max-content;
+  grid-template-rows: 1fr;
+  grid-column-gap: 2rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .contact-item {
